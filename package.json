@@ -12,7 +12,8 @@
     "lint": "eslint",
     "prettier:check": "prettier --check .",
     "prettier:format": "prettier --write .",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "write-translations": "docusaurus write-translations"
   },
   "dependencies": {
     "@docusaurus/core": "^3.10.1",

@@ -39,6 +39,22 @@ module.exports = {
   trailingSlash: "false",
   organizationName: "zmkfirmware", // Usually your GitHub org/user name.
   projectName: "zmk", // Usually your repo name.
+  i18n: {
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans', 'en'],
+    localeConfigs: {
+      'zh-Hans': {
+        label: '简体中文',
+        direction: 'ltr',
+        htmlLang: 'zh-Hans'
+      },
+      'en': {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en'
+      }
+    }
+  },
   customFields: {
     isDevelopmentVersion,
     releaseVersions,
@@ -99,6 +115,10 @@ module.exports = {
               label: "Keymap Upgrader",
             },
           ],
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
         },
         {
           type: "dropdown",
