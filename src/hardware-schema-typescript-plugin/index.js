@@ -9,7 +9,7 @@ const fs = require("fs");
 const { compileFromFile } = require("json-schema-to-typescript");
 
 async function generateHardwareMetadataTypescript() {
-  const ts = await compileFromFile("../schema/hardware-metadata.schema.json");
+  const ts = await compileFromFile("schema/hardware-metadata.schema.json");
   fs.writeFileSync("src/hardware-metadata.d.ts", ts);
 }
 
